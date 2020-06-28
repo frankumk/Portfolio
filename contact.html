@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <h1>Contact Use</h1>
+  <table>
+    <caption>Administration</caption>
+    <tr>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Phone</th>
+    </tr>
+    <tr>
+      <td>Sally</td>
+      <td>CEO</td>
+      <td>123-123-1234</td>
+    </tr>
+    <tr>
+      <td>Fred</td>
+      <td>CIO</td>
+      <td>456-456-4567</td>
+    </tr>
+  </table>
+
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form-->
+  <section>
+    <form action="https://www.profile.com/more-info-request" method="POST" class="request-info">
+
+      <div class="input-fields">
+        <label for="full-name">Enter Your Name:</label>
+        <input type="text" name="full-name" id="full-name" required />
+      </div>
+
+      <div class="input-fields">
+        <label for="email-address">Email:</label>
+        <input type="email" name="email-address" id="email-address" required />
+      </div>
+
+      <div class="input-fields">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+      </div>
+
+      <div class="input-fields">
+        <label for="comments">Comments/Questions:</label>
+        <textarea name="comments" id="comments" rows="5" columns="20"></textarea>
+      </div>
+      <div class="input-fields">
+        <!--Demo inputs-->
+        <input type="password" />
+        <input type="date" />
+        <input type="time" />
+        <input type="number" />
+        <input type="range" min="0" max="10"/>
+        <input type="url" />
+        <input type="search" name="google" />
+        <br/>
+        <input type="checkbox" name="option1" value="BSCS">BSCS Info</input>
+        <input type="checkbox" name="option2" value="BSWD">BSWD</input>
+        <input type="checkbox" name="option2" value="BSGD">BSGD</input>
+        <br/>
+        <input type="radio" name="school-status" value="highschool">High School</input>
+        <input type="radio" name="school-status" value="college">College</input>
+        <input type="radio" name="school-status" value="none">None</input>
+        <br/>
+        <select name="cars">
+            <option value="Mustang">Mustang</option>
+            <option value="Camaro">Camarao</option>
+            <option value="Ram-2500">RAM 2500</option>
+        </select>
+<br />
+        <input type="reset" />
+
+        </div>
+      <div class="input-fields">
+        <input type="submit" value="Submit" />
+      </div>
+
+    </form>
+  </section>
+</body>
+
+</html>
